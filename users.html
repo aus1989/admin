@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+
+</head>
+<body>
+  <div class="grid-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-right">
+        <span class="bi bi-person-circle"></span>
+      </div>
+
+      <div class="header-left">
+        <!-- <span class="bi bi-search"></span> -->
+      </div>
+
+      <div class="menu-icon" onclick="openSidebar()">
+        <span class="bi bi-list"></span>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <div class="sidebar-title">
+          <span class="bi bi-cash-coin"></span>
+          <h3>Thrive Token</h3>
+      </div>
+
+      <div class="profile">
+        <div class="profile-details">
+          <span class="bi bi-person-circle"></span>
+          Hi, Admin
+        </div>
+      </div>
+
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+          <span class="bi bi-columns-gap"></span>
+          <a href="index.html">Dashboard</a>
+        </li>
+        <li class="sidebar-list-item">
+          <span class="bi bi-credit-card"></span>
+          <a href="#">Finance</a>
+        </li>
+        <li class="sidebar-list-item">
+          <span class="bi bi-person-fill"></span>
+          <a href="admin.html">Admin</a>
+        </li>
+        <li class="sidebar-list-item">
+          <span class="bi bi-people-fill"></span>
+          <a href="users.html">Users</a>
+        </li>
+        <li class="sidebar-list-item">
+          <span class="bi bi-gear"></span>
+          <a href="#">Settings</a>
+        </li>
+        <li class="sidebar-list-item">
+          <span class="bi bi-box-arrow-right"></span>
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- Main -->
+    <main class="main-container">
+      <div class="main-title">
+        <p class="font-weight-bold">DASHBOARD</p>
+      </div>
+
+      <div class="user-board">
+        <table width="100%">
+          <thead>
+            <tr>
+              <td>User ID</td>
+              <td>Name</td>
+              <td>Email</td>
+              <td>IP address</td>
+              <td>Status</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <h4>Unity Boss</h4>
+              </td>
+              <td>unity@gmail.com</td>
+              <td>123.234.11</td>
+              <td class="active"><p>Active</p></td>
+              <td class="edit"><a href="#">Edit</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <h4>Austin Dev</h4>
+              </td>
+              <td>austin@gmail.com</td>
+              <td>123.234.11</td>
+              <td class="active"><p>Active</p></td>
+              <td class="edit"><a href="#">Edit</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <h4>Wilson Dev</h4>
+              </td>
+              <td>wilson@gmail.com</td>
+              <td>123.234.11</td>
+              <td class="active"><p>Active</p></td>
+              <td class="edit"><a href="#">Edit</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <h4>David Dev</h4>
+              </td>
+              <td>dave@gmail.com</td>
+              <td>123.234.11</td>
+              <td class="active"><p>Active</p></td>
+              <td class="edit"><a href="#">Edit</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+  
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
